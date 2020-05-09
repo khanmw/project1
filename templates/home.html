@@ -47,7 +47,7 @@
 									<br>
 									<h4>{{ message }} </h4>
 							{% endif %}
-							<table style="width:75%">
+							<table cellpadding="10">
 							<thead>
 								<tr>
 									<th>ISBN</th>
@@ -58,16 +58,16 @@
 						</thead>
 						<tbody>
 							{% for book in book_list %}
-							<table style="width:75%;text-align:left;">
 							<tr>
-									<td><a class="nav-link" href="/bookpage/{{book[0]}}">{{book[0]}}</a></td>
-							    <td><a class="nav-link" href="/bookpage/{{book[0]}}">{{book[1]}}</a></td>
-									<td>{{book[2]}}</td>
-									<td>{{book[3]}}</td>
+									<td text-align="left"><a href="/bookpage/{{book[0]}}">{{book[0]}}</a></td>
+							    <td text-align="left"><a href="/bookpage/{{book[0]}}">{{book[1]}}</a></td>
+									<td text-align="left"><a href="/bookpage/{{book[0]}}">{{book[2]}}</a></td>
+									<td text-align="left"><a href="/bookpage/{{book[0]}}">{{book[3]}}</a></td>
 							</tr>
 						</tbody>
-						</table>
 							{% endfor %}
+						</table>
+
 							{% if message %}
 								<div class="alert alert-danger" role="alert">
 									<p class="alert-heading"> {{ message }} </p>
