@@ -1,0 +1,10 @@
+psycopg2
+os
+flask
+datetime
+sqlalchemy
+flask_sqlalchemy
+sqlalchemy.orm
+requests
+json
+csv
