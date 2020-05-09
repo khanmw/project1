@@ -59,10 +59,10 @@
 						<tbody>
 							{% for book in book_list %}
 							<tr>
-									<td text-align="left"><a href="/bookpage/{{book[0]}}">{{book[0]}}</a></td>
-							    <td text-align="left"><a href="/bookpage/{{book[0]}}">{{book[1]}}</a></td>
-									<td text-align="left"><a href="/bookpage/{{book[0]}}">{{book[2]}}</a></td>
-									<td text-align="left"><a href="/bookpage/{{book[0]}}">{{book[3]}}</a></td>
+									<td><a href="/bookpage/{{book[0]}}">{{book[0]}}</a></td>
+							    <td><a href="/bookpage/{{book[0]}}">{{book[1]}}</a></td>
+									<td>{{book[2]}}</td>
+									<td>{{book[3]}}</td>
 							</tr>
 						</tbody>
 							{% endfor %}
